@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aula03 EXEM02</title>
+</head>
+<body>
+
+    <script>
+        
+        function Buzina(barulho) {
+            this.onomatopeia = barulho;
+        }
+        Buzina.prototype.tocar = function(){
+            console.log(this.onomatopeia);
+        }
+        
+        var b1 = new Buzina ("Fuoom");
+        b1.tocar();
+        var b2 = new Buzina ("Ua ua");
+        b2.tocar();
+    
+    </script>
+
+</body>
+</html>
