@@ -10,10 +10,11 @@
             this.nome = n;
             this.idade = i;
             this.altura = a;
-            this.envelhece = function (){
-                 this.idade++; 
-            }
         }
+        Pessoa.prototype.envelhece = function (){
+                 this.idade++; 
+        }
+        
 
         var a = new Pessoa("Fulano", 19, 1.78);
         var b = new Pessoa("Ciclano", 21, 2.0);
