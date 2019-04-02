@@ -6,20 +6,17 @@
 </head>
 <body>
     <script>
-        function pessoa(){
-            var p = {
-            nome: "Beltrano",
-            idade: 29,
-            altura: 1.60,
-            envelhece: function (){
-            this.idade++;
-                }
+        function Pessoa(n, i, a) {
+            this.nome = n;
+            this.idade = i;
+            this.altura = a;
+            this.envelhece = function (){
+                 this.idade++; 
             }
-            return p;
         }
 
-        var a = pessoa("Fulano", 19, 1.78);
-        var b = pessoa("Ciclano", 21, 2.0);
+        var a = new Pessoa("Fulano", 19, 1.78);
+        var b = new Pessoa("Ciclano", 21, 2.0);
 
         /* function envelhece(pessoa){
             pessoa.idade++;
